@@ -1,0 +1,65 @@
+/*IMPORTANTE SU IE7 I DIV NON PRENDONO IL POSITION RELATIVE COME DEFAULT QUINDI
+  CON QUESTO CSS IMPOSTIAMO IL RELATIV AI VARI DIV UTILIZZATI.
+  VIENE IMPORTATO SOLO IN CASO DI BROWSER IE7 */
+#page{
+  position: relative;
+}
+#header{
+  position: relative;
+}
+#header-content{
+  position: relative;
+}
+#header-content-top{
+  position: relative;
+}
+#header-logo{
+  position: relative;
+}
+#header-content-bottom-right{
+  position: relative;
+}
+#div_operatore{
+  position: relative;
+}
+#header-info{
+  position: relative;
+  float: right !important;
+  padding-right: 30px !important;
+}
+#header-content-bottom{
+  position: relative;
+}
+#header-content-top-right{
+  position: relative;
+}
+#home{
+  position: relative;
+}
+#calendar{
+  position: relative;
+}
+#info{
+  position: relative;
+}
+#openpreferiti{
+  position: relative;
+}
+#content{
+  position: relative;
+}
+#pageNavigator{
+  position: relative;
+}
+#menu{
+  position: relative;
+}
+#menuvoices{
+  position: relative;
+}
+#body{
+  position: relative;
+}
+#header-breadcrumbs{
+  position: relative;
+}

@@ -1,0 +1,828 @@
+/*==================================================================================================*/
+/*   GESTIONE PLUGINS JQUERY IN BODY   */
+/*==================================================================================================*/
+div.tabFolderContainer,div.dataTableContainer {
+  line-height: normal !important;
+  margin-bottom: 20px;
+  /*font-size: 12px;*/
+  width:98%;
+  border-radius: 0;
+  border : 0;
+}
+
+form div.tabFolderContainer,form div.dataTableContainer {
+  /*overflow-x: auto;*/
+  background: #FFF;
+}
+
+
+/* Gestione Labels dentro i campi*/
+div.fieldLabelerContainer {
+  position: relative;
+}
+
+div.fieldLabelerContainer label.fieldLabeler {
+  position: absolute;
+  top: 0px;
+  left: 5px;
+}
+
+.combobox {
+  display: inline;
+  white-space: normal !important;
+  float: left;
+}
+
+.tabFolderContainer .ui-widget-header{
+  /*RIDEFINITO RISPETTO A JQUERY */
+  background: #FFF;
+  border:0;
+}
+
+.ui-tabs {
+	position:static !important;
+}
+
+.ui-tabs .ui-tabs-panel{
+  overflow:auto;
+  border-radius: 0;
+  background: #FFF;
+  border-bottom: 8px solid #587c9e;
+  border-top: 8px solid #587c9e;
+  border-left: 1px solid #587c9e;
+  border-right: 1px solid #587c9e;
+  min-height: 350px;
+}
+
+.ui-tabs .ui-tabs-nav li {
+  float: left;
+  color: #2c68a0;
+  border-radius: 0;
+  margin-left: 2px;
+  background: #e1e1e1;
+  font-weight: bold;
+  border: 0;
+  height: 28px;
+  position:static;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected{
+  color: #FFF;
+  border-radius: 0;
+  /*margin-left: 2px;*/
+  background: #587c9e;
+  font-weight: bold;
+  border: 0;
+  /*padding-bottom: 0;*/
+}
+
+.ui-tabs .ui-tabs-nav a:link{
+  color: #2c68a0;
+  font-size: 12px;
+}
+
+.ui-tabs .ui-tabs-nav .ui-tabs-selected a:link{
+  color: #FFF;
+  font-size: 12px;
+}
+
+
+/*VITA*/
+.tabFolderContainer .div_IR_Barra {
+  text-align: center;
+  /* For Mozilla/Gecko (Firefox etc) */
+  background: -moz-linear-gradient(left top, #EDEDED, #FFFFFF 70%);
+  color: #335D85;
+  padding: 2px;
+  font-size: 14px;
+  font-weight: bold;
+  width: 98%;
+  margin: 15px 0px 15px 0px;
+}
+
+div.dataTableContainer .dataTable {
+  width: 100%;
+}
+
+div.dataTableContainer {
+  border-collapse: collapse;
+  /*interpretati da Chrome e FFox*/
+  margin-left: auto;
+  margin-right: auto;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  /*position: relative;*/
+  top: 0px;
+}
+
+/*Ridefinizioni per Dettaglio DataTable su /jQuery/css/demo_table_jui.css*/
+.dettaglioDataTable {
+  padding: 0px !important;
+}
+
+.dataTableContainer table.display {
+  border-collapse: inherit !important;
+}
+
+.dataTableConDettaglio .barraDettagliBottoni {
+  margin-bottom: 15px;
+}
+
+div.dataTableDettaglioContainer {
+  padding: 5px !important;
+  border: solid 1px #CCCCCC;
+  padding: 10px 10px 15px 10px;
+  background: #FFFFFF;
+}
+
+.listaEtichette {
+  background: #FFF !important;
+  height: auto !important;
+}
+
+div.dataTableContainer .ui-widget-header{
+  background: #CCC;
+  border-radius: 0;
+  border:0;
+  color: #5c5c5c;
+  min-height: 32px;
+  margin: 0px 1px 0px 1px; /*margin ai lati per compensare il border da 1px della table.dataTable*/
+}
+
+div.dataTableContainer .dataTables_length,div.dataTableContainer .dataTables_filter, div.dataTableContainer .dataTables_info, div.dataTableContainer .dataTables_paginate{
+  margin-top:5px;
+  width: inherit;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+div.dataTableContainer .dataTables_paginate .first, div.dataTableContainer .dataTables_paginate .previous,div.dataTableContainer .next, 
+.dataTables_paginate div.dataTableContainer .last, div.dataTableContainer .dataTables_paginate .fg-button{
+  border-radius:0;
+  background: #d6d6d6;
+  border: 1px solid #A5A5A5;
+  color:#5c5c5c;
+}
+
+.paging_full_numbers span.paginate_active{
+  background: #FFF;
+  border-radius:0;
+  border: 1px solid #A5A5A5;
+}
+
+div.dataTableContainer .dataTables_paginate .fg-button{
+  margin-left: 3px;
+}
+
+div.dataTableDettaglioContainer tr {
+  height: inherit;
+}
+div.dataTableContainer td{
+  vertical-align: middle;
+}
+div.dataTableDettaglioContainer td {
+  vertical-align: top;
+}
+
+div.dataTableContainer th{
+  font-weight: bold !important; /* parametri ridefiniti con important perche' se la DT e' inserita dentro un'architettura jQuery (accordion o tabolder) */
+  color: #FFF !important;       /* la direttiva CSS corrente di ridefinizione viene a suoa volta ridefinita dal CSS Default di jQuery */
+  border: 1px solid #FFF !important;
+  vertical-align: middle;
+  background: #244c71; /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSI3JSIgc3RvcC1jb2xvcj0iIzI0NGM3MSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijg2JSIgc3RvcC1jb2xvcj0iIzRlNzQ5NyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+  background: -moz-linear-gradient(top,  #244c71 7%, #4e7497 86%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(7%,#244c71), color-stop(86%,#4e7497)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #244c71 7%,#4e7497 86%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #244c71 7%,#4e7497 86%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #244c71 7%,#4e7497 86%); /* IE10+ */
+  background: linear-gradient(to bottom,  #244c71 7%,#4e7497 86%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#244c71', endColorstr='#4e7497',GradientType=0 ); /* IE6-8 */
+}
+
+div.dataTableContainer td{
+  border: 1px solid #FFF;
+}
+
+div.dataTableDettaglioContainer>div#IR_barra_dettaglio {
+  font-size: 12px;
+  font-family: 'Tahoma', Arial, Verdana, sans-serif;
+  color: #FFFFFF;
+  padding: 10px;
+  height: 16px;
+  text-align: left;
+  background: #6087AD; /* Old browsers */
+}
+
+div.dataTableContainer thead tr, div.dataTableContainer tr.classeRigaDT {
+  height: 33px;
+  cursor: pointer; /* cursor pointer per tutte le righe DT */
+}
+
+/* solo per firefox che non nasconde la THEAD fittizia utilizzata per gestione datatables con scroll */
+div.dataTables_scrollBody thead {
+  height: inherit;
+}
+
+div.dataTableAllRows tr.classeRigaDT {
+  cursor: default !important; /* cursor pointer non su righe DT della allRows perche' non sono cliccabili su tutta la riga */
+}
+
+tr.odd {
+  background: #d0dce6;
+}
+
+tr.even{
+  background: #f4f7fa;
+}
+
+tr.odd td.sorting_1{
+  background: #d0dce6;
+}
+
+tr.even td.sorting_1{
+  background: #f4f7fa;
+}
+
+tr.even.row_selected td {
+    background-color: #6087ad;
+}
+tr.odd.row_selected td {
+    background-color: #6087ad;
+}
+
+div#IR_barra_dettaglio b {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.jQueryPluginComboText {
+  vertical-align: top;
+  margin-right: 1px;
+  margin-bottom: 0px;
+}
+
+.jQueryPluginComboButton {
+  height: 20px !important;
+  background: #E0E0E0 !important;
+  border: 1px solid #BABABA !important;
+  padding: 0;
+  text-align: center;
+  cursor: pointer;
+  vertical-align: top;
+  margin-bottom: 3px;
+}
+
+.jQueryPluginComboButton:hover {
+  background: #d9d9d9;
+  border: 1px solid #BABABA;
+}
+
+.jQueryPluginComboButton:active {
+  background: #B1B1B1;
+  border: 1px solid #BABABA;
+}
+
+.jQueryPluginComboButtonFF {
+  height: 20px !important;
+  background: #E0E0E0 !important;
+  border: 1px solid #BABABA !important;
+  padding: 0;
+  text-align: center;
+  cursor: pointer;
+  vertical-align: top;
+  margin-bottom: 2px;
+  margin-top: 1px;
+}
+
+.jQueryPluginComboAutocomplete {
+  font-size: 12px;
+  background: #FFFFFF;
+  border-radius: 0;
+  text-align: left !important;
+  font-family: Tahoma, Arial, Helvetica !important;
+  font-size: 12px !important;
+  color: #5c5c5c !important;
+}
+
+.jQueryPluginComboAutocomplete:hover{
+  color: #FFF !important;
+}
+
+.tendinaAutocompleteFixedWidth {
+  width: 220px !important;
+}
+
+.textareacombo {
+  font-size: 12px;
+  resize: none;
+  height: 16px;
+  margin-bottom: 3px;
+  padding-left: 5px;
+  width: 200px;
+  border: 1px solid #BABABA;
+  color: #2A2A2A !important;
+  overflow:hidden;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  vertical-align: middle;
+}
+
+.textareacombo_piurighe {
+  height: 34px !important;
+  overflow:auto;
+}
+
+.textareacombo:focus {
+  outline: none;
+  background-color: #ffe9d8;
+  border: 1px solid #ea722a;
+}
+
+.textareacombo:disabled {
+  background-color: #DADADA !important;
+  color: #969696 !important;
+}
+
+.comboboxLarghezzaAuto { /* Solo selettore. Gestito applicativamente su jQueryPlugins */ }
+
+.enfatizzaRisultatoAutocomplete {
+  font-weight: bold;
+}
+
+.ui-button {
+  cursor: pointer;
+  padding: 0;
+  text-align: center;
+  text-decoration: none !important;
+}
+
+.ui-button-disabled {
+  border: 1px solid #BABABA !important;
+  background: #FFF;
+}
+
+.ui-state-hover {
+  color: #F6F6F6;
+}
+
+/* Riduzione campi input interni a strutture jQueryUI*/
+.jQueryPluginPositioning input[type='text'] {
+  width: 50px;
+}
+
+/* Restore size campo ricerca filtro datatable*/
+.dataTables_filter input[type='text'] {
+  width: 200px;
+}
+
+.campoData,.campoObblData {
+  width: 110px !important;
+  background: #FFFFFF url('/icon16/calendario.gif') no-repeat scroll right;
+  /* non smusso l'angolo sui campi data per l'icona presente sul text */
+  -moz-border-top-right-radius: 0px !important;
+  -webkit-border-top-right-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+  font-family: Tahoma, Arial, Helvetica !important;
+  cursor: pointer;
+}
+
+.classeCampiObbligatori {
+  background-color: #E2EFFA !important;
+}
+
+/* Ridefinizione stili jQuery/jQueryUI */
+/* grandezza font datepicker */
+div.ui-datepicker {
+  font-size: 0.8em;
+}
+
+/* grandezza combobox mese e anno per IE del datepicker aperto */
+.ui-datepicker select.ui-datepicker-month,.ui-datepicker select.ui-datepicker-year {
+  width: auto;
+}
+
+.ui-dialog { /*
+width: auto!important;
+*/
+  height: auto !important;
+  border: solid 1px #808080;
+  border: 0px 1px 1px 1px solid #BEBEBE;
+  /*box-shadow: 0px 3px 6px #CCCCCC;*/
+  padding: 0;
+}
+
+.ui-dialog-content .bottone {
+  font-family: Arial, Helvetica !important;
+  font-size: 12px !important;
+  font-weight: bold !important;
+}
+
+.ui-dialog-content {
+    font-size: 12px !important;
+}
+
+.ui-widget {
+  font-family: Tahoma, Arial, Helvetica !important;
+}
+
+.ui-autocomplete {
+  max-height: 180px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.ui-autocomplete-input {
+  font-family: Tahoma, Arial, Helvetica !important;
+  /*font-size: 12px;*/
+  max-height: 180px;
+  color: #5c5c5c;
+}
+
+.ui-autocomplete-input:focus {
+  outline: none;
+  background-color: #ffe9d8;
+  /*-moz-box-shadow: 2px 1px 2px 1px #a4b8dd inset;
+  -webkit-box-shadow: 2px 1px 2px 1px #a4b8dd inset;
+  box-shadow: 2px 1px 2px 1px #a4b8dd inset;*/
+}
+
+.ui-tabs b {
+  font-weight: bold !important;
+}
+
+.ui-menu .ui-menu-item a {
+  padding: .2em .4em !important;
+  font-size: 12px !important;
+  border: 0;  
+}
+
+.optionVuota{
+  height: 13px;
+}
+
+.ui-menu .ui-menu-item a:hover {
+  background: #587C9E !important;
+  margin-right: 1px;
+}
+
+* html .ui-autocomplete {
+  height: 210px;
+  font-family: Tahoma, Arial, Helvetica !important;
+  font-size: 0.85em !important;
+}
+
+td.group {
+  background-color: #ffbb77;
+  border-bottom: 2px solid #fff;
+  border-top: 2px solid #fff;
+  color: #004080;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.dataTables_length input {
+  width: 40px !important;
+}
+
+.rigaDTjBasisTag .bottone,.bottoneDettaglio {
+  min-width: 80px;
+  font-size: 11px;
+}
+
+/****** MSGBOX  *****/
+div.msgBox {
+  padding: 4px 10px 4px 10px;
+  position: fixed;
+  z-index: 1000;
+  font-family: Verdana;
+  width: 430px;
+  min-height: 160px;
+  color: #00335e;
+  /*-moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  -moz-box-shadow: 0px 0px 11px #000000;
+  -webkit-box-shadow: 0px 0px 11px #000000;
+  box-shadow: 0px 0px 11px #000000;*/
+  background-color: #fff;
+}
+
+div.msgBoxBackGround {
+  top: 0;
+  left: 0;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #587C9E;
+  opacity: 2.8;
+  z-index: 999;
+}
+
+div.msgBoxTitle {
+  padding: 5px 0 5px 0;
+  /*ERRORE VALIDAZIONE VERIFICARE FONT*/
+  /*font-variant:Tahoma;*/
+  font-size: 16pt;
+  font-weight: lighter;
+  color: #00335e;
+  width: 100%;
+  border-bottom: 1px solid #002c5f;
+}
+
+div.msgBoxImage {
+  margin: 20px 5px 0 5px;
+  display: inline-block;
+  float: left;
+  height: 75px;
+  width: 75px;
+}
+
+div.msgBoxImage img {
+  height: 75px;
+  width: 75px;
+}
+
+div.msgBoxContent {
+  font-size: 11pt;
+  margin: 0 3px 6px 3px;
+  display: inline-block;
+  float: left;
+  height: 90px;
+  width: 319px;
+}
+
+div.msgBoxContent p {
+  padding: 0;
+  margin: 0;
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+div.msgBoxContent span {
+  display: table-cell;
+  vertical-align: middle;
+  color: #00335e;
+}
+
+div.msgBoxButtons {
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+}
+
+div.msgBoxButtons input[type='button'] {
+  cursor: pointer;
+  margin: 2px;
+  height: 35px;
+  width: 90px;
+  border: 1px solid #afafaf;
+  background-color: #004076;
+  color: #FFFFFF;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+
+div.msgBoxButtons input[type='button']:hover {
+  background-color: #00549c;
+  color: White;
+}
+
+div.msgBoxButtons input[type='button']:active {
+  background-color: #AAAAAA;
+  color: White;
+}
+
+div.msgBoxInputs {
+  margin: 0 auto;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-top: 5px;
+  width: 195px;
+}
+
+div.msgInput input[type='text'],div.msgInput input[type='password'] {
+  padding: 4px;
+  border: 1px solid #DFDFDF;
+  color: #2f2f2f;
+  width: 180px;
+}
+
+div.msgInput text {
+  color: #2f2f2f;
+  font-size: 10pt;
+}
+
+div.msgBoxBackGround>div#header-logo-trasparent {
+  position: fixed;
+  top: 90%;
+  left: 83%;
+  opacity: 2;
+}
+
+/*********** menu Operatore **************/
+.btn_menutopbar, .btn_menutopbar:hover {
+  border: 0px;
+  color: #fff !important;
+  cursor: pointer;
+  font-weight: bold; /*ie7 non funziona*/
+  font-family: arial, sans-serif;
+  height: 25px;
+  padding-bottom: 4px;
+  font-size: 11px;
+  /*background:#7795B0;*/
+  background: rgb(119, 149, 176); /* Old browsers */
+  background: -moz-linear-gradient(45deg, rgba(119, 149, 176, 1) 0%, rgba(88, 124, 158, 1) 100% ); /* FF3.6+ */
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(119, 149, 176, 1) ), color-stop(100%, rgba(88, 124, 158, 1) ) ); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(45deg, rgba(119, 149, 176, 1) 0%, rgba(88, 124, 158, 1) 100% ); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(45deg, rgba(119, 149, 176, 1) 0%, rgba(88, 124, 158, 1) 100% ); /* Opera 11.10+ */
+  background: -ms-linear-gradient(45deg, rgba(119, 149, 176, 1) 0%, rgba(88, 124, 158, 1) 100% ); /* IE10+ */
+  background: linear-gradient(45deg, rgba(119, 149, 176, 1) 0%, rgba(88, 124, 158, 1) 100% ); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(  startColorstr='#7795b0', endColorstr='#587c9e', GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.btn_menutopbar_click {
+  background: none repeat scroll 0 0 #FFFFFF;
+  /*box-shadow: 0 1px 5px #CCCCCC;*/
+  color: #3366CC !important;
+  border-bottom: 1px solid #fcfcfc;
+}
+
+
+.lista_menutopbar {
+  display: none;
+  min-width: 200px;
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 0px 1px 1px 1px solid #BEBEBE;
+  /*box-shadow: 0px 3px 6px #CCCCCC;*/
+  position: absolute;
+  text-align: left;
+  top: 71px;
+  left: 84%;
+  z-index: 999;
+  margin: 0px;
+  padding: 0px;
+  padding-bottom: 10px;
+  font-size: 11px;
+}
+
+.lista_menutopbar li {
+  list-style: none;
+  padding: 2px 18px;
+}
+
+.lista_menutopbar li a,.lista_menutopbar li a:hover {
+  text-decoration: none;
+  padding: 3px;
+  display: block;
+  color: #585858 !important;
+}
+
+.lista_menutopbar .linea {
+  border-top: 1px solid #E5E5E5;
+  font-size: 0;
+  margin: 8px 0;
+  padding: 0px 5px;
+}
+
+.lista_menutopbar li img {
+  float: left;
+  margin-right: 8px;
+  margin-top: 7px;
+}
+
+span.show-tooltip-text {
+  display: none;
+  position: fixed;
+  font-size: 0.8em;
+  background-color: #fcd1a3;
+  padding: 8px;
+  padding-left: 6px;
+  padding-right: 6px;
+  /*ERRORE VALIDAZIONE VERIFICARE COLOR*/
+  /* color: 004080; */
+  border: 1px solid #959595;
+  /*box-shadow: 1px 1px 2px #CCCCCC;*/
+  border-radius: 6px;
+  z-index: 999;
+}
+
+/**************   POPUP    **************/
+.popupSize { /* ridefinizione per jQuery */
+  width: 100% !important;
+  min-height: 100% !important;
+  height: 100% !important;
+  padding: 0px !important;
+}
+
+.popup {
+  background: #cecece !important; /* Old browsers */
+  background: -moz-linear-gradient(top,  #cecece 2%, #ffffff 99%) !important; /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(2%,#cecece), color-stop(99%,#ffffff)) !important; /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #cecece 2%,#ffffff 99%) !important; /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #cecece 2%,#ffffff 99%) !important; /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #cecece 2%,#ffffff 99%) !important; /* IE10+ */
+  background: linear-gradient(to bottom,  #cecece 2%,#ffffff 99%) !important; /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cecece', endColorstr='#ffffff',GradientType=0 ) !important; /* IE6-9 */
+}
+
+.popupContent {
+  background: none repeat scroll 0 0 #FFFFFF;
+  padding: 10px;
+  margin: 10px;
+}
+
+#popup-buttoncontainer {
+  margin: 8px;
+}
+
+#popup-buttoncontainer {
+  position: absolute;
+  text-align: center;
+  padding: 2px;
+}
+
+.popup-withbutton {
+  position: absolute;
+  height: 80%;
+}
+
+/*RIDEFINIZIONE CLASSI JQUERY*/
+
+.sorting_disabled{
+  cursor: default !important;
+}
+
+.ui-widget-content{
+  color: #5c5c5c;
+}
+
+.ui-widget{
+  font-family: Tahoma, Arial, Helvetica !important;
+  font-size: 12px;
+  color: #5c5c5c;
+}
+
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button { 
+	font-family: Tahoma, Arial, Helvetica !important; 
+	font-size: 12px; 
+}
+
+.ui-dialog .ui-dialog-titlebar-close{
+  border: 0;
+  background: none;
+}
+
+.ui-corner-all {
+    border-radius: 0;
+}
+
+/* override */
+.dataTables_wrapper {
+  min-height: 0px !important;
+  _height: inherit !important;
+}
+
+/* gestione Growl */
+#growlUI_alert {
+  background: url('info_alert.png') no-repeat scroll 10px 5px;
+}
+
+div.blockMsg {
+  width: 350px;
+  top: 120px;
+  right: 10px;
+  border: none;
+  padding: 5px;
+  background-color: #000;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  opacity: .7;
+  color: #fff;
+}
+
+div.blockOverlay {
+  opacity: .2 !important;
+}
+
+div.growlUI h1, div.growlUI h2 {
+  font-family: Tahoma, Arial, Helvetica !important;
+  padding-left: 40px;
+  text-align: left;
+  margin: 10px;
+}
+
+div.growlUI h1 {
+  padding-left: 60px;
+  font-size: 16px;
+}
+
+div.growlUI h2 {
+  font-size: 12px;
+}

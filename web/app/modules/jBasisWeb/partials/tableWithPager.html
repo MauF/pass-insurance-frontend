@@ -1,0 +1,31 @@
+<div>
+    <div class="bar">
+        <div class="pull-right"  style="padding-bottom: 10px;" data-ng-show="data.length > 1">
+            <input type="search" class="search-query" placeholder="search" data-ng-model="filter">
+        </div>
+
+        <div class="pull-left" data-ng-show="title">
+            <label class="control-label" data-ng-bind="title"/>
+        </div>
+
+    </div>
+
+    <table class="table table-striped table-bordered table-condensed table-hover">
+        <thead>
+        <tr>
+            <th style="text-align: center;cursor: pointer" data-ng-click="toggleSort(header)" data-ng-bind="header" data-ng-repeat="header in headers" />
+            <th style="text-align: center;" data-ng-bind="'actions'" data-ng-show="hasAction"/>
+        </tr>
+        </thead>
+        <tbody>
+        <tr data-ng-repeat="obj in data | filter: filter | orderBy:columnSort.sortColumn:columnSort.reverse">
+            <td style="text-align: center;" data-ng-repeat="item in obj" data-ng-bind="item"></td>
+            <td style="text-align: center;" data-ng-show="hasAction">
+                <div>
+                    <i style="cursor: pointer;" class="icon-zoom-in" data-ng-click="action({obj: obj})"></i>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>

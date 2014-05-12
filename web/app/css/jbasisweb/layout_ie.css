@@ -1,0 +1,71 @@
+/*
+div#content {
+  height: 100%;
+}
+
+div#body {
+  padding: 10px 0px 0px 0px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.disegnaButtonBar {
+  padding-top: 0px;
+  text-align: center;
+}
+
+.form_generic {
+  margin: 0px;
+  padding: 5px;
+}
+*/
+
+.jQueryPluginComboAutocomplete {
+  font-size: 10px;
+}
+
+input {
+  border: 1px solid #c0c0c0;
+  height: 17px;
+  vertical-align: middle;
+}
+
+.inputdisabled {
+  background-color: #dbdbdb;
+  color: #949494 !important;
+}
+
+input[disabled='disabled'], textarea[disabled='disabled']{
+  background-color: #dbdbdb !important;
+  color: #949494 !important;
+}
+
+input[type='checkbox'][disabled='disabled']{
+  background-color: transparent !important;
+}
+
+.bottone{
+  padding-left:5px !important;
+  padding-right:5px !important;
+}
+.bottoneDisabled,.bottoneDisabled:hover{
+  padding-left:5px !important;
+  padding-right:5px !important;
+  border-width:1px !important;
+  border-style:solid;
+  border-color:#d3d3d3;
+  background-color:#e0e0e0 !important;
+}
+
+.bottoneDettaglio, .barraDettagliBottoni>.bottone{
+  width:auto !important;
+}
+
+.formContainer {
+  margin: 8px 18px;
+}
+
+div#header-breadcrumbs {
+  margin-left: 18px;
+}
+

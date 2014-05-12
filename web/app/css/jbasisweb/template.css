@@ -1,0 +1,223 @@
+/*NUOVI TEMPLATE PER I PRODOTTI*/
+.tabellaRiepilogo .barraDettagliBottoni, .tabellaRiepilogo .bottone, .tabellaRiepilogo .barraBottoni, 
+.tabellaRiepilogoRigaAlternata .barraDettagliBottoni, .tabellaRiepilogoRigaAlternata .bottone, .tabellaRiepilogoRigaAlternata .barraBottoni,
+.tabellaImporti .bottone, .tabellaRiepilogoImporti .bottone, .tabellaImporti .barraBottoni, .tabellaRiepilogoImporti .barraBottoni,
+.cellaRiepilogo .bottone, .cellaRiepologo .barraBottoni, .cellaRiepologo .barraDettagliBottoni {
+  margin: 0 5px 0 0 !important;
+  padding-top: 0px !important;
+}
+
+.tabellaRiepilogo, .tabellaRiepilogoRigaAlternata, .tabellaImporti, .tabellaRiepilogoImporti, .tabellaSegnalazioni {
+  width: 100%;
+}
+
+
+.tabellaRiepilogo tr, .tabellaImporti tr, .tabellaRiepilogoImporti tr{
+  background:  #DFE8F0;
+  height: 30px;
+}
+
+
+.tabellaRiepilogoRigaAlternata tr.rigaRiepilogoEven {
+    background: #DFE8F0;
+    height: 30px;
+}
+
+.tabellaRiepilogoRigaAlternata tr.rigaRiepilogoOdd {
+  background: #F4F7FA;
+  height: 30px;
+}
+
+.tabellaRiepilogo td, .tabellaImporti td {
+  border: 1px solid #FFFFFF !important;
+  padding: 5px 5px 5px 10px !important;
+  vertical-align: middle !important;
+}
+
+.tabellaRiepilogoImporti td, .tabellaRiepilogoRigaAlternata td, .tabellaSegnalazioni td{
+  border-bottom: 1px solid #FFFFFF !important;
+  padding: 5px 5px 5px 10px !important;
+  vertical-align: middle !important;
+}
+
+
+.tabellaImporti td.cellaTitolo, .tabellaRiepilogoImporti td.cellaTitolo, .tabellaRiepilogo td.cellaTitolo{
+  background: #587C9E !important;
+  color: #FFFFFF !important;
+  font-weight: bold !important;
+}
+
+.tabellaRiepilogoImporti tr.rigaTotali,.tabellaImporti tr.rigaTotali {
+  background: #CCD8E4;
+  font-weight: bold;
+}
+
+tr.rigaBold {
+  font-weight: bold !important;
+}
+
+.tabellaRiepilogo a, .tabellaRiepilogoRigaAlternata a, .tabellaImporti a, .tabellaRiepilogoImporti a{
+  color: #2C68A0;
+  font-weight: bold;
+}
+
+.tabellaSegnalazioni td{
+  color: #FFF !important;
+}
+
+.tabellaSegnalazioni tr{
+  background: #cd6868 !important;
+}
+
+.tabellaRiepilogo td.cellaImporto input, .tabellaRiepilogoRigaAlternata td.cellaImporto input,
+.tabellaRiepilogoImporti td.cellaImporto input, .tabellaImporti td.cellaImporto input {
+  width: 12ex !important;
+}
+
+.tabellaRiepilogo td.cellaPercentuale input, .tabellaRiepilogoRigaAlternata td.cellaPercentuale input,
+.tabellaRiepilogoImporti td.cellaPercentuale input, .tabellaImporti td.cellaPercentuale input {
+  width: 5ex !important;
+}
+
+/*Utility per ogni tipo di tabella*/
+
+td.tdNoPadding {
+  padding: 0 !important
+}
+
+td.cellaBold {
+  font-weight: bold !important;
+}
+
+td.cellaImporto {
+  text-align: right !important;
+}
+
+td.cellaPercentuale {
+  text-align: center !important;
+}
+
+td.cellaImporto input{
+  text-align: right !important;
+}
+
+td.cellaPercentuale input{
+  text-align: right !important;
+}
+
+td.cellaMiddle {
+  text-align: center !important;
+}
+
+td.cellaIntestazione {
+  background: #C7DAEA;
+  color: #5C5C5C;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 14px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 5px 5px 5px 10px !important;
+  position: inherit;
+  text-align: left;
+  width: inherit;
+  vertical-align: middle;
+}
+
+td.cellaRiepilogo{
+  vertical-align: middle;
+  background:  #DFE8F0;
+  height: 30px;
+  padding: 5px 5px 5px 10px;
+}
+
+td.cellaBorderBottom{
+  background:  #FFFFFF;
+  border-bottom: 1px solid #C7DAEA !important;
+}
+
+td.cellaNoBorder{
+  border: 0px !important;
+}
+
+td.cellaNoBorderNoPadding{
+  border: 0px !important;
+  padding:0px !important;
+}
+
+tr.trHeight30 {
+  height: 30px !important;
+}
+
+tr.trHeight30 td{
+  vertical-align: middle !important;
+}
+
+.tabella100 {
+  width: 100% !important;
+}
+
+.tabella100 td{
+  padding: 3px;
+  vertical-align: middle;
+}
+
+.fontAlert{
+  color: #FF0000 !important;
+}
+
+input.inputAlert{
+  border: 2px solid #FF0000 !important;
+}
+
+input.inputImporto{
+  width: 12ex !important;
+}
+
+.fontWarning{
+  color: #049CF4 !important;  
+}
+
+tr.rigaRiepilogoEven {
+    background: #DFE8F0;;
+    height: 30px;
+}
+
+tr.rigaRiepilogoOdd {
+  background: #F4F7FA;
+  height: 30px;
+}
+
+.rigaRiepilogo td{
+  padding: 3px 5px 3px 10px;
+}
+
+tr.rigaNascosta{
+  display: none;
+}
+
+tr.rigaVuota{
+  background:  #FFF !important;
+  height: 25px;
+}
+
+td.cellaVuota{
+  background:  #FFF !important;
+}
+
+.nascosto {
+  display: none;
+}
+
+.visibile {
+  display: block;
+}
+
+.link{
+  color: #2C68A0 !important;
+}
+
+td.cellaSegnalazione {
+  color: #FFF !important;
+  background: #cd6868 !important;
+}

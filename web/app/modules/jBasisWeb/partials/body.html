@@ -1,0 +1,34 @@
+<div id="body" style="top: 108px; left: 205px;">
+	<div id="header-breadcrumbs">
+		<ul id="navbarHtmlContent" class="navbar">
+			<li data-ng-repeat="breadCrumb in breadCrumbs"><a
+				style="text-decoration: none; cursor: pointer;"> <span
+					data-ng-class="{navbar_sel:$index + 1 != breadCrumbs.length}"
+					data-ng-click="selectMenuItem(breadCrumb)"
+					data-ng-bind="breadCrumb.label"></span>
+			</a> <span class="separatore"
+				data-ng-show="$index + 1 != breadCrumbs.length"> ► </span></li>
+		</ul>
+	</div>
+	
+	<div data-ng-view>
+<!-- 		<div class="formContainer rounded-corners shadow" -->
+<!-- 			data-ng-show="showContent"> -->
+
+<!-- 			<div id="div_IR_Barra" data-ng-show="showTitleBar" -->
+<!-- 				class="rounded-corners-small"> -->
+<!-- 				<b data-ng-bind="subPageTitle"></b> -->
+<!-- 			</div> -->
+
+<!-- 			<div data-ng-view></div> -->
+
+<!-- 		</div> -->
+
+<!-- 		<div class="container" style="height: 100%; width: 100%" -->
+<!-- 			data-ng-hide="showContent"> -->
+<!-- 			<br> <br> <br> <img -->
+<!-- 				style="cursor: default; display: block; margin-left: auto; margin-right: auto; zoom: 2;" -->
+<!-- 				src="images/jbasisweb/logoBig.png"> -->
+<!-- 		</div> -->
+	</div>
+</div>

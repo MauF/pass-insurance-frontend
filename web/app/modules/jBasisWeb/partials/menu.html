@@ -1,0 +1,29 @@
+<div id="menu">
+    <div id="menuvoices">
+        <ul class="menu">
+            <li data-ng-class="{parent: true}">
+                <a style="text-decoration: none;" data-ng-click="selectMenuItem(mainMenuItem)">
+                    <div class="vocemenu" data-ng-bind="mainMenuItem.label"></div>
+                </a>
+            </li>
+        </ul>
+        <ul class="menu">
+            <li data-ng-class="{current: isMainMenu(selectedMenuItem), parent: !isMainMenu(selectedMenuItem)}" data-ng-hide="isMainMenu(selectedMenuItem)">
+                <a style="text-decoration: none;" data-ng-click="selectMenuItem(selectedMenuItem)">
+                    <div class="vocemenu" data-ng-bind="selectedMenuItem.label"></div>
+                </a>
+            </li>
+            <li data-ng-class="{children:child.children.length != 0 , current:isSelectedMenu(child)}"
+                data-ng-repeat="child in selectedMenuItem.children">
+                <a style="text-decoration: none;" data-ng-click="selectMenuItem(child)">
+                    <div class="vocemenu" data-ng-bind="child.label"></div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="menufolding">
+    <a data-ng-click="toggleMenu()" id="folding">
+        <img src="images/jbasisweb/foldMenu.png" id="foldingmenu">
+    </a>
+</div>

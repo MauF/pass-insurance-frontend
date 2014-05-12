@@ -1,0 +1,27 @@
+<div class="formContainer rounded-corners shadow" style="background-color: white; float: none; margin: 0 auto; width: 30%;">
+	<h3 style="text-align: center;">Login</h3>
+	<hr />
+	<form>
+		<div class="form-group">
+				<label data-ng-bind="usernameLbl"></label>
+				<input type="text" class="form-control" placeholder="{{usernameLbl}}" data-ng-model="username">
+		</div>
+		<div class="form-group">
+			    <label data-ng-bind="passwordLbl"></label>
+				<input type="password" class="form-control" placeholder="{{passwordLbl}}" data-ng-model="password" data-ng-model="">
+		</div>
+		<hr/>
+		<div class="row">
+			<div class="pull-right" style="padding-right: 10px; padding-bottom: 10px;">
+				<button class="bottone" type="button" title="{{okBtn.title}}"
+					data-ng-click="tryToLogin()">
+					<span class="icon-ok-circle"> {{okBtn.value}}</span>
+				</button>
+				<button class="bottone" type="button" title="{{clearBtn.title}}"
+					data-ng-click="clearFields()">
+					<span class="icon-remove-circle"> {{clearBtn.value}}</span>
+				</button>
+			</div>
+		</div>
+	</form>
+</div>

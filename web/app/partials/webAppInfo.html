@@ -1,0 +1,26 @@
+<div class="modal-header" style="background-color: #4c6d8c;font-size: 14px; color: #FFF !important; font-weight: bold;">
+    <h3 style="text-align: center;" >Environment Information</h3>
+</div>
+<div class="modal-body">
+    <table class="table table-bordered" style="margin: 0 auto;">
+    	<thead>
+    		<tr>
+    			<th>Version</th>
+    			<th>Environment</th>
+    			<th>Last Build</th>
+    		</tr>
+    	</thead>
+    	<tbody>
+    		<tr>
+    			<th style="text-align: center;">{{environmentInfo.version}}</th>
+    			<th style="text-align: center;">{{environmentInfo.name}}</th>
+    			<th style="text-align: center;">{{environmentInfo.lastBuild}}</th>
+    		</tr>
+    	</tbody>
+    </table>
+</div>
+<div class="modal-footer" style="background-color: #cecece;">
+    <button class="bottone" type="button" data-ng-click="ok()">
+		<span>OK</span>
+	</button>
+</div>

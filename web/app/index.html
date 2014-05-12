@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="app">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>{{windowTitle}}</title>
+    <link rel="stylesheet" href="lib/bootstrap-css/css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/jbasisweb/layoutjBasisWeb.css"/>
+    <link rel="stylesheet" href="css/jbasisweb/layout.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/jbasisweb/template.css" rel="stylesheet"/>
+</head>
+<body>
+<div id="page" data-ng-controller="appCtrl">
+    <!-- Header -->
+    <div data-ng-include src="'modules/jBasisWeb/partials/header.html'"></div>
+    <!-- content -->
+    <div id="content" data-ng-show="showWorkingArea">
+        <!-- menu -->
+        <div data-ng-include src="'modules/jBasisWeb/partials/menu.html'"></div>
+        <!-- body -->
+        <div data-ng-include src="'modules/jBasisWeb/partials/body.html'"></div>
+    </div>
+</div>
+
+<!-- THIRD-PARTY-LIBRARIES -->
+<script src="lib/angular/angular.js"></script>
+<script src="lib/angular/angular-route.js"></script>
+<script src="lib/angular/angular-cookies.js"></script>
+<script src="lib/angular/angular-sanitize.js"></script>
+<script src="lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<!-- RGI-JBASIS-WEB -->
+<script src="modules/jBasisWeb/js/jBasisWeb.js"></script>
+<script src="modules/jBasisWeb/js/jBasisWeb-controllers.js"></script>
+<script src="modules/jBasisWeb/js/jBasisWeb-directives.js"></script>
+<script src="modules/jBasisWeb/js/jBasisWeb-filters.js"></script>
+<script src="modules/jBasisWeb/js/jBasisWeb-services.js"></script>
+<!-- APP -->
+<script src="js/app.js"></script>
+<script src="js/app-controllers.js"></script>
+<script src="js/app-directives.js"></script>
+<script src="js/app-filters.js"></script>
+<script src="js/app-services.js"></script>
+</body>
+</html>

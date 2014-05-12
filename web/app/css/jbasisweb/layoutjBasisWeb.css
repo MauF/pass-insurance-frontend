@@ -1,0 +1,337 @@
+/*==================================================================================================*/
+/*   jBASISWeb   */
+/*==================================================================================================*/
+
+/********************************************************************/
+/****************************** TABLE *******************************/
+table {
+  border-spacing: 0;
+  border: none;
+  width: 95%;
+  /*font-size:1em;*/
+}
+
+.bodyWidgetContainer{
+	padding:0px !important;
+	left:0px!important;
+	top:0px!important;
+}
+
+.formWidgetContainer{
+	margin:1px 10px !important;
+}
+
+caption,th,td {
+  text-align: left;
+  margin-left: 0px;
+  vertical-align: top;
+}
+
+.verticalAlignCenter td {
+  vertical-align: middle !important;
+}
+
+td.tdHighlight {
+  text-align: center;
+  background: #FFFFFF;
+  color: #335D85;
+  padding: 2px;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+/* TABLE IZOOMSOGG anagrafe */
+.tableIZoomSogg {
+  width: 100%;
+}
+
+.tableIZoomSogg td {
+  padding: 2px;
+}
+
+.tableIZoomSogg b {
+  font-weight: bold;
+}
+
+/*Sottotitolo*/
+.tabellaSottotitolo {
+  width: 100%;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.rigatitolo {
+  height: 20px;
+  /* For Mozilla/Gecko (Firefox etc) */
+  background: #FFF;
+}
+
+.sottotitolo {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #335D85;
+  padding-bottom: 5px;
+}
+
+.rigatitolo>td {
+  text-align: center;
+}
+
+.messaggioErrore {
+  background-color: #FFFFFF;
+  font-family: Courier, Arial, Helvetica !important;
+  font-size: 10px !important;
+  border: solid 1px #788fc5;
+}
+
+/********************************************************************/
+/*****************************  FORM  *******************************/
+.form_generic,.formContainer {
+  padding: 20px 20px 20px 20px;
+  /*text-align: center;*/
+  min-width: 500px;
+  margin: 8px 30px;
+  background: #FFF;
+  overflow:auto;
+}
+
+.formContainer table {
+  text-align: center;
+  /*margin:auto;*/
+}
+
+.formContainer .tabellaInterna {
+  text-align: center;
+  margin: 0;
+}
+
+.form_generic a {
+  text-decoration: underline;
+  color: #cc2050;
+}
+
+.form_generic a:hover {
+  color: #c0c0c0;
+}
+
+/*centro tutti gli oggetti figli di form (centratura elementi strutturali di presentation su body)*/
+.form_generic>* { /*interpretati da Chrome e FFox*/
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/********************************************************************/
+/***************************** IR_BARRA *****************************/
+div#div_IR_Barra {
+  background: #C7DAEA;
+  color: #5C5C5C;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 14px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 5px 5px 5px 10px;
+  position: inherit;
+  text-align: left;
+  width: inherit;
+}
+
+.barraVuota {
+  border-radius: 0px !important;
+  margin-top: 5px;
+  padding: 0px !important;
+  height: 4px !important;
+}
+
+#div_IR_Barra a {
+  color: #335D85;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/********************************************************************/
+/**************************** ACCORDION *****************************/
+.accordion_header {
+  height: 35px;
+  margin: 5px;
+  background: #e5e5e5; /* Old browsers */
+  background: -moz-linear-gradient(top, #e5e5e5 50%, #d8d8d8 50%) !important; /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,#e5e5e5), color-stop(50%,#d8d8d8)) !important; /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #e5e5e5 50%,#d8d8d8 50%) !important; /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #e5e5e5 50%,#d8d8d8 50%) !important; /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #e5e5e5 50%,#d8d8d8 50%) !important; /* IE10+ */
+  background: linear-gradient(to bottom, #e5e5e5 50%,#d8d8d8 50%) !important; /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e5', endColorstr='#d8d8d8',GradientType=0 ) !important; /* IE6-9 */
+  /****BORDI****/
+  border: solid 1px #CACACA !important;
+  /*angoli NON smussati*/
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  /*IE*/
+  border-radius: 0px; 
+  text-align: left;
+  padding-left: 40px;
+  cursor:pointer;
+}
+
+.accordion_headerOpened{
+  background: #c0d4e2 !important; /* Old browsers */
+  background: -moz-linear-gradient(top, #c0d4e2 50%, #b0c9db 50%) !important; /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,#c0d4e2), color-stop(50%,#b0c9db)) !important; /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #c0d4e2 50%,#b0c9db 50%) !important; /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #c0d4e2 50%,#b0c9db 50%) !important; /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #c0d4e2 50%,#b0c9db 50%) !important; /* IE10+ */
+  background: linear-gradient(to bottom, #c0d4e2 50%,#b0c9db 50%) !important; /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c0d4e2', endColorstr='#b0c9db',GradientType=0 ) !important; /* IE6-9 */
+  border: solid 1px #CACACA !important;
+  text-align: left;
+  padding-left: 40px;
+  cursor:pointer;
+}
+
+.accordion_header h3 {
+  margin-top: 0px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #5c5c5c;
+  padding-left: 0px;
+}
+
+.accordion_header h3:hover {
+  color:  #5c5c5c;
+}
+
+.iconaAccordion{
+  left: -30px;
+  margin-top: -8px;
+  position: relative;
+  top: 50%;
+}
+
+.accordion_body {
+  top: -5px !important;
+  margin: 5px;
+  font-size: 12px;
+  background: #FFF;
+  /****BORDI****/
+  border: solid 1px #8FAFC7;
+  /*angoli NON smussati*/
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  /*IE*/
+  border-radius: 0px; 
+  padding: 5px 10px;
+}
+
+.accordionHeadContenuto{
+  float: right;
+  height: 35px;
+}
+
+/********************************************************************/
+/******************************* LOGIN ******************************/
+.frm_login {
+  margin: 0 auto;
+  margin-top: 40px;
+  /***DIMENSIONI***/
+  width: 450px;
+  /***SFONDO***/
+  background: #eeeff0;
+  /****BORDI****/
+  border: solid 1px #f5f7fc;
+  /*angoli smussati*/
+  -moz-border-radius: 9px;
+  -webkit-border-radius: 9px;
+  /*IE*/
+  border-radius: 9px;
+  padding: 30px 20px 20px 30px;
+}
+
+.frm_login table {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.frm_login input[type='text'], .frm_login input[type='password'], .frm_login .textareacombo {
+  margin-bottom: 8px;
+  width: 150px;
+}
+
+.frm_login .jQueryPluginComboButton, .frm_login .jQueryPluginComboButtonFF {
+  margin-bottom: 7px;
+}
+
+
+/************  POPUP  *************/
+.divdialog-popup {
+  background-color: #ebebeb;
+  /*border:1px solid #b5b5b5;*/
+  border-radius: 0px;
+  /*padding-bottom:12px;*/
+  border: 1px solid #39638e;
+}
+
+.divdialog-popup .ui-dialog-titlebar  {
+  background: #5481a9; /* Old browsers */
+  background: -moz-linear-gradient(top, #5481a9 50%, #39638e 50%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #5481a9), color-stop(50%, #39638e) ); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #5481a9 50%, #39638e 50%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #5481a9 50%, #39638e 50%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #5481a9 50%, #39638e 50%); /* IE10+ */
+  background: linear-gradient(to bottom, #5481a9 50%, #39638e 50%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(  startColorstr='#5481a9', endColorstr='#39638e', GradientType=0 ); /* IE6-9 */
+  /*border:0px;*/
+  /*color:#004080;*/
+  /*padding: 10px !important;*/
+  /*border-bottom: 1px solid #f2f2f2;*/
+  border-radius: 0px;
+  text-transform: uppercase;
+}
+
+#ui-dialog-title-POPopenpreferiti {
+  margin: 0;
+  font-size: 14px;
+}
+
+#POPopenpreferiti {
+  padding: 0;
+  /*border: 1px solid #203B56;*/
+}
+
+#POPopenpreferiti .popup-container {
+  padding: 1px;
+  width: 99%;
+}
+
+.tableInto-popup {
+  font-size: 13px;
+}
+
+.tableInto-popup input {
+  width: 22ex;
+}
+
+/*MSGBOX*/
+
+.ui-dialog-buttonpane{
+	bottom: 0;
+    padding: 15px;
+    position: relative;
+    margin: 0 !important;
+    background: #FFF;
+    right: 0;
+    text-align: right;
+}
+
+#RGI_Alert{
+  background: url('info_alert.png') no-repeat scroll 15px 30px #FFFFFF ;
+  font-size: 12px;
+}
+
+#RGI_Alert p{
+  margin-left: 50px;
+  margin-top: 10px;
+  white-space: pre-line;
+}

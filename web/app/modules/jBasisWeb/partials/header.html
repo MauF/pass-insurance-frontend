@@ -1,0 +1,28 @@
+<div id="header">
+    <div id="header-content">
+        <div id="header-content-top">
+            <div id="header-logo"></div>
+            <div id="header-content-bottom-right">
+                <div id="header-info" data-ng-bind="headerInfo"></div>
+            </div>
+        </div>
+        <div id="header-content-bottom">
+            <div id="header-content-top-left" style="margin-left: 228px;" data-ng-bind="pageTitle">
+            	
+            </div>
+            <div id="header-content-top-right">
+                <div id="info" class="btnicontopbar">
+                    <span class="badge" style="background: orange; padding-left: 5px;" data-ng-show="loading">
+                    	<img src="icon16/ajax-loader.gif"> {{loadingMsg}}
+                    </span>
+<!--                     <img src="images/jbasisweb/home.png" data-ng-click="home()" class="show-tooltip" -->
+<!--                          title="Home"> -->
+                    <img src="images/jbasisweb/info.png" data-ng-click="showInfo()" class="show-tooltip"
+                         title="Info">
+<!--                     <img src="images/jbasisweb/icon32/exit.gif" data-ng-click="logout()" class="show-tooltip" -->
+<!--                          title="Logout"> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

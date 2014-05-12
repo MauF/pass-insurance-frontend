@@ -1,0 +1,61 @@
+{
+  "name": "mainMn",
+  "label": "Home",
+  "path": "home",
+  "children": [
+    {
+      "name": "testMenuMn",
+      "label": "Test Menu",
+      "path": "test",
+      "children": [
+        {
+          "name": "testSubMenuMn",
+          "label": "Test Sub Menu",
+          "path": "test1",
+          "search": {
+            "action": "test1"
+          }
+        },
+        {
+          "name": "testSubMenuMn2",
+          "label": "Test Sub Menu2",
+          "path": "test2",
+          "search": {
+            "action": "test2"
+          },
+          "children": [
+            {
+              "name": "testChild1SubMenuMn2",
+              "label": "Test Sub Child 1",
+              "path": "testchild1",
+              "search": {
+                "action": "testchild1"
+              }
+            },
+            {
+              "name": "testChild2SubMenuMn2",
+              "label": "Test Sub Child 2",
+              "path": "testchild2",
+              "search": {
+                "action": "testchild2"
+              }
+            },
+            {
+              "name": "testChild3SubMenuMn2",
+              "label": "Test Sub Child 3 (error test)",
+              "path": "testchild3",
+              "search": {
+                "action": "testchild3"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "showcaseMn",
+      "label": "Show Case",
+      "path": "showcase"
+    }
+  ]
+} 
