@@ -11,3 +11,5 @@ pass-insurance-frontend
 		*http://andyshora.com/unit-testing-best-practices-angularjs.html
 		*https://www.youtube.com/watch?v=MVw8N3hTfCI
 		*https://egghead.io/lessons/angularjs-getting-started-with-protractor
+
+Live demo: https://cdn.rawgit.com/MauF/pass-insurance-frontend/master/web/app/index.html
